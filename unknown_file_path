@@ -1,0 +1,13 @@
+def new_function(param1: int, param2: str) -> bool:
+    """
+    This function takes an integer and a string as parameters and returns a boolean value.
+    
+    Parameters:
+    param1 (int): The first parameter, which is used to ...
+    param2 (str): The second parameter, which is used to ...
+    
+    Returns:
+    bool: The return value. True for success, False otherwise.
+    """
+    # function implementation goes here
+    pass
