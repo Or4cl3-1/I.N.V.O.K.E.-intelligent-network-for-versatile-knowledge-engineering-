@@ -1,0 +1,1 @@
+Since the task does not involve creating a new file or writing new code, this section is not applicable. The task only involves editing an existing file (`file1.py`) to remove trailing whitespaces from lines 3 and 5.
