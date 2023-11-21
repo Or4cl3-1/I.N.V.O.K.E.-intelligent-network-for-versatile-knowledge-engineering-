@@ -1,0 +1,39 @@
+import os
+import re
+
+def adjust_indentation(file_name, standard_indentation):
+    try:
+        with open(file_name, 'r+') as file:
+            lines = file.readlines()
+            file.seek(0)
+            file.truncate()
+
+            for line in lines:
+                current_indentation = re.match(r'\s*', line).group()
+                if current_indentation != standard_indentation:
+                    line = re.sub(r'^\s*', standard_indentation, line)
+                file.write(line)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+def test_adjust_indentation():
+    test_file_name = "test_file"
+    test_standard_indentation = "    "  # 4 spaces
+
+    # Create a test file with inconsistent indentation
+    with open(test_file_name, 'w') as file:
+        file.write("  line with 2 spaces\n")
+        file.write("    line with 4 spaces\n")
+        file.write("\tline with a tab\n")
+
+    adjust_indentation(test_file_name, test_standard_indentation)
+
+    # Check that the indentation has been adjusted correctly
+    with open(test_file_name, 'r') as file:
+        lines = file.readlines()
+        for line in lines:
+            assert re.match(r'\s*', line).group() == test_standard_indentation
+
+    os.remove(test_file_name)
+
+test_adjust_indentation()
