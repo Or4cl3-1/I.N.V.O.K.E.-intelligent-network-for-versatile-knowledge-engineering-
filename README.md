@@ -1,1 +1,3 @@
+## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Structure
+[![Structure](https://images.repography.com/46979491/Or4cl3-1/I.N.V.O.K.E.-intelligent-network-for-versatile-knowledge-engineering-/structure/JRYSag2JQxruy2iyhBS7POEAxTxlUqMu2ENOLUsFQ1Q/zdEZicZv2IM1HZ-Rx5AJ9x6v1XeG0RfJSozvSxHmdqU_table.svg)](https://github.com/Or4cl3-1/I.N.V.O.K.E.-intelligent-network-for-versatile-knowledge-engineering-)
 # I.N.V.O.K.E.-intelligent-network-for-versatile-knowledge-engineering
